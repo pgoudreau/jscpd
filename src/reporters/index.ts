@@ -11,6 +11,7 @@ import { ThresholdReporter } from './threshold';
 import { TimeReporter } from './time';
 import { VerboseReporter } from './verbose';
 import { XmlReporter } from './xml';
+import { JunitReporter } from './junit';
 
 const EXISTING_REPORTERS: {
   [key: string]: new (options: IOptions) => IReporter;
@@ -20,6 +21,7 @@ const EXISTING_REPORTERS: {
   time: TimeReporter,
   json: JsonReporter,
   xml: XmlReporter,
+  junit: JunitReporter,
   html: HtmlReporter,
   silent: SilentReporter,
   threshold: ThresholdReporter,
